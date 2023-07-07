@@ -2,14 +2,16 @@ defmodule ImageBase64Handler.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :image64,
-     version: "0.0.2",
-     elixir: "~> 1.2",
-     build_embedded: Mix.env == :prod,
-     start_permanent: Mix.env == :prod,
-     description: description(),
-     package: package(),
-     deps: deps]
+    [
+      app: :image64,
+      version: "0.0.2",
+      elixir: "~> 1.2",
+      build_embedded: Mix.env == :prod,
+      start_permanent: Mix.env == :prod,
+      description: description(),
+      package: package(),
+      deps: deps()
+    ]
   end
 
   # Configuration for the OTP application
